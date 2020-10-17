@@ -1,19 +1,12 @@
-const sayHello = (name) => {
-    
-    if (typeof name === "string") {
+const sayHelo = (name) => {
+    if (typeof name !== 'string') return;
 
-        return `Hello, ${name}`;
-    }
-    
+    const favoriteFriend = 'Mark';
+
+    const isFavoriteFriend = favoriteFriend.toLowerCase() === name.toLowerCase();
+
+    return `${isFavoriteFriend ? 'Hi' : "Hello"}, ${name}!`
+
 }
-const name = "Oleg"
-
-console.log(sayHello(name));
-
-const sayHellow = function (name) {
-    if (typeof name === "string") {
-
-        return `Hello, ${name}`;
-    }
-}
-alert(sayHellow('Adrian'));
+const result = sayHelo('Mark');
+console.log(result);

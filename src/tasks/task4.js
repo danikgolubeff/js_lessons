@@ -1,5 +1,10 @@
-const string = 'hello';
-let newString = ' ';
+const deleteChars = (str) => {
+    if (typeof str !== 'string') return;
 
+    const slicedString = str.slice(1, str.length - 1);
 
-console.log(newString = string.slice( string.length));
+    if (slicedString.length === 0) return 'Пустая строка';
+
+    return slicedString;
+}
+console.log(deleteChars('Hello'));
