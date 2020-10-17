@@ -15,19 +15,9 @@ console.log(minimalNumber(2, 5));
 console.log(minimalNumber(3, -1));
 console.log(minimalNumber(1, 1));
 
-const minimalNumber2 = function (c, d) {
-    if (typeof c === "number" || typeof d === "number") {
-        if (c > d) {
-
-            return d;
-        }
-        if (d > c) {
-
-            return c;
-        }
-        return 'equally';
-    }
+const findMin = (firstNumber, SecondNumber) => {
+    if (typeof firstNumber !== 'number' || typeof SecondNumber !== 'number') return;
+    if (firstNumber === SecondNumber) return 'Equalite'
+    return Math.min(firstNumber, SecondNumber);
 }
-console.log(minimalNumber2(8, 3));
-console.log(minimalNumber2(-3, -1));
-console.log(minimalNumber2(7, 7));
+console.log(findMin(-1, 4));
