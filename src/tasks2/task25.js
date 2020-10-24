@@ -5,14 +5,29 @@ const difFunc = (arrDiff) => {
     if (!Array.isArray(arrDiff)) return;
 
 
-    return arrDiff.map((element) => {
-        if (typeof element === 'number')
-            return element.toString();
-        if (typeof element === 'string')
-            return element.toUpperCase();
+    return arrDiff.filter((element) => {
+        return typeof element === 'string' || typeof element === 'number'
+
+    });
+
+};
+const filteredDifferent = difFunc(diferrent);
+
+
+
+const difFunction = (arrDiffer) => {
+
+    return arrDiffer.map((newElement) => {
+
+        if (typeof newElement === 'number')
+
+            return (newElement * 2).toString();
+
+        if (typeof newElement === 'string')
+            return newElement.toUpperCase();
 
     })
 
 };
 
-console.log(difFunc(diferrent));
+console.log(difFunction(filteredDifferent));
