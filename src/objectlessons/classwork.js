@@ -65,3 +65,22 @@
 //   }, {})
 // };
 // console.log(generateCard(brands))
+
+class Car {
+    constructor(color, wheelQuantity, engine) {
+        this.color = color;
+        this.engine = engine;
+        this.wheelQuantity = 4;
+    }
+
+
+}
+class NewCar extends Car {
+    constructor(color, wheelQuantity, engine, window, leather) {
+        super(color, wheelQuantity, engine)
+        this.window = window;
+        this.leather = leather;
+    }
+}
+const car = new NewCar('red', '', 'electric', 'tuning', 'cow');
+console.log(car);
