@@ -1,12 +1,12 @@
-const sayHelo = (name) => {
-    if (typeof name !== 'string') return;
+// const sayHelo = (name) => {
+//     if (typeof name !== 'string') return;
 
-    const favoriteFriend = 'Mark';
+//     const favoriteFriend = 'Mark';
 
-    const isFavoriteFriend = favoriteFriend.toLowerCase() === name.toLowerCase();
+//     const isFavoriteFriend = favoriteFriend.toLowerCase() === name.toLowerCase();
 
-    return `${isFavoriteFriend ? 'Hi' : "Hello"}, ${name}!`
+//     return `${isFavoriteFriend ? 'Hi' : "Hello"}, ${name}!`
 
-}
-const result = sayHelo('Mark');
-console.log(result);
+// }
+// const result = sayHelo('Mark');
+// console.log(result);
